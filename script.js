@@ -18,13 +18,12 @@ class Rectang{
 class Square extends Animal {
 	 constructor(width)
 	 {
-	this.width=width;
+	super(width,width);
 	 }
 	get width(){
 		return this.width;
 	}
-	getPerimeter()
-	{
+	getPerimeter(){
 		return 4*(this.width);
 	}
 }
