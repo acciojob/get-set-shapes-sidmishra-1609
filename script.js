@@ -16,10 +16,10 @@ class Rectang{
 }
 
 class Square extends Animal {
-	// constructor(width)
-	// {
-	// 	super(width,width);
-	// }
+	 constructor(width)
+	 {
+	this.width=width;
+	 }
 	getPerimeter()
 	{
 		return 4*(this.width);
