@@ -1,29 +1,34 @@
 //complete this code
-class Rectangle{
-	constructor(width,height){
-		this.width = width;
-		this.height = height;
+class Rectangle {
+	constructor(width ,height)
+	{
+		this.width=width;
+		this.height=height;
 	}
-	get width(){
+
+	get getWidth()
+	{
 		return this.width;
 	}
-	get height(){
+
+	get getHeight()
+	{
 		return this.height;
 	}
-	getArea(){
-		return (this.width)*(this.height);
+
+	getArea()
+	{
+		return (this.width) * (this.height);
 	}
 }
 
-class Square extends Rectangle {
-	 constructor(width)
-	 {
-	super(width,width);
-	 }
-	get width(){
-		return this.width;
+class Square extends Rectangle  {
+	constructor(width)
+	{
+		super(width,width);
 	}
-	getPerimeter(){
+	getPerimeter()
+	{
 		return 4*(this.width);
 	}
 }
